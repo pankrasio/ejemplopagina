@@ -1,0 +1,84 @@
+*{
+   margin: 0;
+   padding: 0;
+}/*Este código hace que las cajas se peguen al 100% del navegador y no queden espacios entre el tope del
+navegador y un DIV*/
+
+/*----------------------------------------------------------------------------------------*/ 
+header{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);/*rgba, el a es un alfa que hace la Transparencia del header de 80%*/
+    height: 70px;
+    position: fixed; /*Que la caja quede fija*/
+    z-index: 10;/*Para que el texto no se posicione sobre el menu este n° es mayor*/
+}
+
+.ancho{
+    width: 80%;
+    height: 70px;
+    /*background: red;*/
+    margin: auto;/*Centra la Caja*/
+}
+/*----------------------------------------------------------------------------------------*/
+
+/*---Caja del Logo---*/
+.logo{
+    width: 30%;
+    height: 70px;
+    /*background: blue;*/
+    float: left;/* Que se alinie lo más a la izquierda posible*/
+    padding-top: 10px;/*quiero que quede más centrado desde el alto; puede que se agrande el contenedor o caja (DIV)*/
+    box-sizing: border-box;/*corregimos la caja; forzamos que ocupe el ancho del contenedor*/
+}
+/*---Texto del Logo---*/
+.logo p a{
+        color:#fff;
+        font-size: 40px;
+        text-decoration: none;/*Quita subrayado de la letra*/
+        font-weight: bold;/*Letras en negrita*/
+        letter-spacing: 1px;/*Generamos un espacio entre letras*/
+        font-family: raleway;/*Le ponemos el tipo de letra que llamamos*/
+    }
+
+/*---Caja del Menú---*/
+nav{
+    width: 70%;
+    height: 70px;
+    /*background: olive;*/
+    float: left;
+    text-align: right;/*Alinea el menú a la derecha*/
+    padding-top: 24px;
+    box-sizing: border-box;/*corregimos la caja*/
+}
+
+nav ul li{
+     display: inline;/*coloca el menú hacia el lado porque li lo muestra hacia abajo*/
+}
+
+/*---Texto del Menú---*/
+nav ul li a{
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;/*Quita subrayado de la letra*/
+    text-transform: uppercase;/*Transforma las letras en mayúsculas*/
+    padding-left: 15px;/*Separamos las palabras*/
+    font-weight: bold;/*Letras en negrita*/
+    letter-spacing: 1px;/*Generamos un espacio entre letras*/
+    font-family: raleway;/*Le ponemos el tipo de letra que llamamos*/
+}
+
+/*Para que al pasar el mouse encima cambie de color el menú*/
+nav ul li a:hover{
+color: #444;    
+}
+
+/*--Llamo a un tipo de letra*/
+@font-face{
+    font-family: raleway;/*el nombre es opcional*/
+    src: url(../fuentes/raleway/Raleway-Regular.ttf);/*Le indico donde esta la fuente*/
+}
+/*Para ver y descargar las fuentes ver: https://fonts.google.com/ */
+
+
+
+

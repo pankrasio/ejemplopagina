@@ -1,0 +1,153 @@
+/*Se importó directamente la letra desde google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+*{/*Con * todas las propiedades tendrán esta función*/
+box-sizing: border-box;
+}
+
+h1, h2, h4, h5, h6{
+    text-transform: uppercase;/*Letras en mayúsculas*/
+    color: #444;
+    font-family: raleway;
+    letter-spacing: 1px;/*Cada letra se separa 1px*/
+}
+
+h2{
+    font-size: 26px;
+    color: #333;
+}
+
+h3{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;/*Interlineado del texto*/
+    padding-top: 20px; 
+    font-weight: normal;/*Deja las letras sin negrita o bold*/
+    color:#777;
+}
+
+h4{
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+h5{
+    font-family: 'Lato', sans-serif;/*tipo de letra*/
+    line-height: 1.5;/*Altura de la letra*/
+    font-weight: normal;/*Quitamos la negrita de la letra*/
+    padding: 10px 0;/*10 para arriba y abajo y 0 hacia los lados*/
+    font-size: 12px;
+    }
+
+p{
+   color: #888;
+   font-family: 'Lato', sans-serif;/*tipo de letra*/
+   font-size: 15px;
+}
+
+.wap{
+    width: 90%;/*ancho del wap*/
+    margin: auto;
+}
+
+.bienvenidos{
+    margin-top: 50px;
+    text-align: center;/*Centrar texto*/
+}
+.contenedor-columnas{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+/*-- Caja de las columnas --*/
+.columnasx3{
+    width: 33.333%;
+    float: left;/*Que las columnas estén lo más a la izquierda posible*/
+    padding: 20px 20px;
+    box-sizing: border-box;/*obligamos a que ocupe el 33% */
+    margin: auto; /*Que esté centrado*/
+}
+
+.columnasx3 img{
+    width: 100%;
+}
+
+.banner-1{
+    width: 100%;
+    background: #1ABC9C;
+    clear: both;/*No respeta el div anterior, p.l.tanto hay que limpiar el sitio*/
+    padding: 30px 50px 50px 50px;
+    /*El padding de arriba es lo mismo que
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    */
+    text-align: center;
+    box-sizing: border-box;/*Que ocupe toda la caja*/
+    transition: .4s;/*Para que la transición al volver no sea brusca*/
+}
+
+.banner-1:hover{
+    background:#444;
+    transition: .4s;/*Transición para que cambie de color el banner*/
+}
+
+/*Modificamos el texto del banner*/
+.banner-1 h3{
+    color: #fff;
+    font-size: 32px;
+}
+/**/
+.banner-1 a{
+    text-decoration: none;/*quitamos el subrayado del texto "Enlace Externo"*/
+    margin-left: 20px; /*Que no esté tan pegado al texto anterior*/
+    font-weight: bold;/*Texto en negrita*/
+    color: #fff;
+    border-bottom: 2px solid #fff;/*volvemos a subrayar "Enlace Externo, pero no queriamos que el espaciado se subrayara*/
+}
+
+/*Atributos del ícono*/
+.columnasx3 i{
+    float: left;/*Que se apegue arriba a la izquierda */
+    padding-right: 20px;/*Que el texto se separe del ícono para que no esté pegado*/
+    color: green;
+}
+
+.columnasx3 h4{
+       padding-bottom: 20px;/*Que el texto del ícono se separe del título*/
+}
+
+/*La caja del Banner-2*/
+.banner-2{
+    margin-top: 50px;/*Agregamos espacio entre las columnas y el banner-2*/
+    background: url(../imagenes/05.jpg);
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat; /*Para que la imagen no se repita*/
+    background-size: cover; /*Imagen al 100% del ancho*/
+    background-attachment: fixed; /*Posición fija para la imagen*/   
+    text-align: center;/*Centramos el texto*/
+    margin-bottom: 50px;
+    
+}
+/*Degradado del banner-2*/
+.banner-2 h3{
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 32px;
+    height: 100%;
+    padding-top: 5%;/*Utilizamos este padding debido a que tenemos un fondo degradado*/
+    /*box-sizing: border-box; ESTO ESTÁ ARRIBA, YA QUE EL SEGUNDO BANNER LE FALTA UN PEDACITO QUE CUBRIR*/
+}
+
+
+/**/
+.banner-2 a{
+    text-decoration: none;/*quitamos el subrayado del texto "Enlace Externo"*/
+    margin-left: 20px; /*Que no esté tan pegado al texto anterior*/
+    font-weight: bold;/*Texto en negrita*/
+    color: #fff;
+    border-bottom: 2px solid #fff;/*volvemos a subrayar "Enlace Externo, pero no queriamos que el espaciado se subrayara*/
+}

@@ -1,0 +1,70 @@
+.red{
+    position: fixed;
+    top: 200px;
+    /*El ícono de facebook está por debajo, hay que subirlo para poder hacer click*/
+    z-index: 100;
+    left: 0;
+}
+#facebook a{
+      background: #3b5998;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none; /*Quitamos subrayado*/
+      width: 55px;
+      transition: all .4s ease;/* ease hace que en 4 segundos se genere una curva; onda de transición*/
+      border-radius:  0 1rem 0 0 ;
+}
+
+#facebook a:hover{
+    background: #000;
+    padding: 10px 50px;
+    border-radius:  0 1rem 1rem 0; 
+}
+
+#youtube a{
+    background: #ff0000;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none; /*Quitamos subrayado*/
+    width: 55px;
+    transition: all .4s ease;/* ease hace que en 4 segundos se genere una curva; onda de transición*/
+}
+
+#youtube a:hover{
+    background: #000;
+    padding: 10px 50px;
+    border-radius:  0 1rem 1rem 0; 
+}
+
+#twitter a{
+    background: #55acee;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none; /*Quitamos subrayado*/
+    width: 55px;
+    transition: all .4s ease;/* ease hace que en 4 segundos se genere una curva; onda de transición*/
+}
+
+#twitter a:hover{
+    background: #000;
+    padding: 10px 50px;
+    border-radius:  0 1rem 1rem 0; 
+}
+
+#correo a{
+    background:  #e95950;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none; /*Quitamos subrayado*/
+    width: 55px;
+    transition: all .4s ease;/* ease hace que en 4 segundos se genere una curva; onda de transición*/
+    border-radius:  0 0 1rem 0; /*Bordes redondeados*/
+}
+
+#correo a:hover{
+    background: #000;
+    padding: 10px 50px;
+    border-radius:  0 1rem 1rem 0; /*Bordes redondeados*/
+}
+
+

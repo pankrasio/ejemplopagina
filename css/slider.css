@@ -1,0 +1,38 @@
+#particles-js{/*Las clases id se llaman con #*/
+
+   /* background: #444; /*Ponemos un color de fondo*/
+   background: url(../imagenes/ima.jpg);/*Poner imagen de fondo*/
+   background-position: center;/*Que la imágen esté centrada*/
+   background-attachment: contain;/*Que la imágen esté dentro de las proporciones definidas*/
+   background-size: cover;/*Que la imagen tome el tamaño del contenedor*/
+
+}
+
+.ancho-letras{
+top: 200px;/*Le decimos que le texto baje 200px desde el header*/
+position: absolute;/*Le decimos que el texto esté sobre la imágen*/
+width: 100%;
+/*background: rgba(0, 0, 0, .8);*/ /*Una vez que hago la caja le quito el color*/
+text-align: center; /*Texto Centrado*/
+z-index: 1;/*el texto esté debajo del menú*/
+
+}
+
+.letras-slider{
+   width: 80%;
+   margin: auto;/*Centra el texto*/
+}
+
+.letras-slider h1{
+    color: #fff;
+    font-family: raleway;
+    font-size: 70px;
+}
+
+.letras-slider p{
+    color: #fff;
+    font-size: 20px;
+    font-family: raleway;
+    padding-top: 50px; /*Que es texto se separe del texto de arriba*/
+    
+}

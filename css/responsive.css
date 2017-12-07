@@ -1,0 +1,24 @@
+@media only screen and (max-width: 480px){/*Celurar*/
+    .red{
+        display: none;
+    }
+
+    .columnasx3{
+        width: 100%;
+    }
+
+    .tablax4{
+        width: 100%;
+    }
+
+    .tablaxd{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 481px) and (max-width: 768px){/*Tablet*/
+
+
+
+}
